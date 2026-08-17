@@ -15,7 +15,7 @@ COPY src/ ./src/
 RUN uv sync --locked
 
 # Copy application code
-COPY pipeline.py .
+COPY ingest_data.py .
 
 # define what to do first when the container runs
-ENTRYPOINT ["uv", "run", "python", "pipeline.py"]
+ENTRYPOINT ["uv", "run", "python", "ingest_data.py"]
