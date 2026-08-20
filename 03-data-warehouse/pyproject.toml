@@ -1,0 +1,20 @@
+[project]
+name = "03-data-warehouse"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "kohmin", email = "61226634+kohmin@users.noreply.github.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "google>=3.0.0",
+    "google-cloud-storage>=3.13.1",
+]
+
+[project.scripts]
+03-data-warehouse = "03_data_warehouse:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
